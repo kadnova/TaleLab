@@ -1,0 +1,308 @@
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Black.eot');
+	src: url('Lato-Black.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Black.woff2') format('woff2'),
+		url('Lato-Black.woff') format('woff'),
+		url('Lato-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Bold.eot');
+	src: url('Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Bold.woff2') format('woff2'),
+		url('Lato-Bold.woff') format('woff'),
+		url('Lato-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Regular.eot');
+	src: url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Regular.woff2') format('woff2'),
+		url('Lato-Regular.woff') format('woff'),
+		url('Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font: 12px/18px Lato, sans-serif;
+	height: 100%;
+	background-color: #12192a;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 600;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+h1 {
+	font-family: Lato Bold, Arial, Tahoma, sans-serif;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+}
+
+a
+{
+	text-decoration: none
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 500px;
+	min-height: 90%;
+	height: auto !important;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	display: block;
+	position: relative;
+	height: 45px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.pages {
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+}
+
+.pages div{
+	display: inline-block;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 50%;
+	-moz-border-radius:50%;
+ 	-webkit-border-radius:50%;
+ 	-khtml-border-radius:50%;
+	border-color: rgba(255,255,255,0.2);
+	margin: 3px;
+	height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pages .last-page {
+	visibility: hidden;
+}
+
+.pages a {
+	color: #12192a;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.pages .current {
+	background-color: rgba(255,255,255,0.6);
+	border-color: rgba(255,255,255,0.6);
+	
+}
+.main-menu {
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+}
+ 
+.main-menu a {
+	color: gray;
+}
+.main-menu div {
+	display: inline;
+	border-right: 1px solid gray;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,0.2);
+	color: gray;
+}
+
+.main-menu td.last-column {
+	border-right: none;
+}
+
+.main-menu .user-name {
+	color: rgba(255,255,255,0.6);
+}
+/* Content
+-----------------------------------------------------------------------------*/
+.page-name {
+	height: 78px;
+}
+
+.add-new-data {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: rgba(255,255,255,0.5);
+    display:block;
+    font-size: 9px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    
+}
+
+.content-table  {
+	width: 100%;
+	height: 100%;
+  	max-width: 100%;
+	color: rgba(255,255,255,0.5);
+
+}
+
+.table-wraper {
+	height: 100%;
+}
+
+.scroll-pane {
+	overflow: auto;
+ 	height: 450px;
+	width: 100%;
+}
+
+.content-table tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.03)
+}
+
+.content-table th {
+	border: 1px solid rgba(255,255,255,0.1);
+	padding-left: 5px;
+	font-size: 9px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.2);
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.actions-name, .actions span {
+	width: 240px;
+    max-width: 240px;
+	text-transform: uppercase;
+	
+}
+
+.actions span {
+	visibility: hidden;	
+}
+
+tr:hover span {
+	visibility: visible
+}
+.actions span {
+	padding-right: 13px;
+	font-style: italic;
+	font-size: 10px;
+}
+
+span:hover {
+	color: white;
+}
+
+#modal_form {
+	width: 300px; 
+	height: 300px; /* Размеры должны быть фиксированы */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтобы окно было в видимой зоне в любом месте */
+	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
+	left: 50%; /* половина экрана слева */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+	display: none; /* в обычном состоянии окна не должно быть */
+	opacity: 0; /* полностью прозрачно для анимирования */
+	z-index: 5; /* окно должно быть наиболее большем слое */
+	padding: 20px 10px;
+}
+/* Кнопка закрыть для тех кто в танке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Подложка */
+#overlay {
+	z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
+	position: fixed; /* всегда перекрывает весь сайт */
+	background-color: #000; /* черная */
+	opacity: 0.8; /* но немного прозрачна */
+	width: 100%; 
+	height: 100%; /* размером во весь экран */
+	top: 0; 
+	left: 0; /* сверху и слева 0, обязательные свойства! */
+	cursor: pointer;
+	display: none; /* в обычном состоянии её нет) */
+}
+
+.next-button {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: rgba(255,255,255,0.5);
+    display:block;
+    font-size: 9px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
+    text-transform: uppercase;
+    
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	border-top: 1px solid rgba(255,255,255,0.1);
+	height: 45px;
+	width: 100%;
+	bottom:0;
+	color: darkgray;
+	font-size: 20px;
+	padding-top: 10px;
+	position: fixed; 
+}

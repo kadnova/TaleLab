@@ -1,0 +1,247 @@
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Black.eot');
+	src: url('Lato-Black.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Black.woff2') format('woff2'),
+		url('Lato-Black.woff') format('woff'),
+		url('Lato-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Bold.eot');
+	src: url('Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Bold.woff2') format('woff2'),
+		url('Lato-Bold.woff') format('woff'),
+		url('Lato-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Regular.eot');
+	src: url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Regular.woff2') format('woff2'),
+		url('Lato-Regular.woff') format('woff'),
+		url('Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	font-weight: 600;
+}
+
+body {
+	font: 12px/18px Lato, sans-serif;
+	height: 100%;
+	background-color: #12192a;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+h1 {
+	font-family: Lato Bold, Arial, Tahoma, sans-serif;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+}
+
+li {
+	list-style-type: none;
+}
+
+a
+{
+	text-decoration: none
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 500px;
+	min-height: 90%;
+	height: auto !important;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	display: block;
+	position: relative;
+	height: 45px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.pages {
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+}
+
+.pages div{
+	display: inline;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 50px;
+	-moz-border-radius:50px;
+ 	-webkit-border-radius:50px;
+ 	-khtml-border-radius:50px;
+	border-color: rgba(255,255,255,0.2);
+	margin: 3px;
+	padding-left: 4px;
+	padding-right: 1px;
+}
+
+.pages .last-page {
+	visibility: hidden;
+}
+
+.pages a {
+	color: #12192a;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.pages .current {
+	background-color: rgba(255,255,255,0.6);
+	border-color: rgba(255,255,255,0.6);
+	
+}
+.main-menu {
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+}
+ 
+.main-menu a {
+	color: gray;
+}
+.main-menu div {
+	display: inline;
+	border-right: 1px solid gray;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,0.2);
+	color: gray;
+}
+
+.main-menu td.last-column {
+	border-right: none;
+}
+
+.main-menu .user-name {
+	color: rgba(255,255,255,0.6);
+}
+/* Content
+-----------------------------------------------------------------------------*/
+.page-name {
+	height: 78px;
+}
+
+.content-table {
+	width: 100%;
+	color: rgba(255,255,255,0.5);
+	border-collapse: collapse;
+
+}
+
+.content-table tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.03)
+}
+
+.content-table th {
+	border: 1px solid rgba(255,255,255,0.1);
+	padding-left: 5px;
+	font-size: 9px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.2);
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.user-table {
+	margin-top: 40px;
+	
+}
+
+.user-table th:hover {
+	
+}
+
+#menu1 {
+	position: absolute;
+    display:none;
+    top: 20px;
+    left: 16px;
+}
+
+.hide-show:hover {
+	display: block;   
+	position: absolute; 
+	height:0px; 
+	margin-top:0;
+}
+
+.hide-show li {
+	background: #12192a;
+	color: rgba(255,255,255,0.5);
+}
+
+.hide-show li:after {
+	position: absolute;
+}
+
+.next-button {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: rgba(255,255,255,0.5);
+    display:block;
+    font-size: 9px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+    position: absolute;
+    right: 0;
+	bottom: 5%;
+    text-transform: uppercase;
+}
+    
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	border-top: 1px solid rgba(255,255,255,0.1);
+	height: 9%;
+	bottom:0;
+	color: darkgray;
+	font-size: 20px;
+	padding-top: 10px;
+}
